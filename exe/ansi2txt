@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "ansi2txt"
+
+ansi2text = Ansi2txt::ANSI2TXT.new
+
+begin
+  ansi2text.ansi2txt
+rescue Interrupt
+  nil
+end
